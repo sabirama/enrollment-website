@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-primary: white;
+  --text-secondary: deepskyblue;
+  --text-tertiary: darkgrey;
+  --primary: lightblue;
+  --secondary: lightgrey;
+  --dark: rgb(88, 88, 88);
+  background-color: dimgray;
+  color: var(--text-primary);
+  max-width: 1920px;
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-secondary);
+}
