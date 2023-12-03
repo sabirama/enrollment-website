@@ -1,0 +1,5 @@
+
+[[redirects]]
+  from = "/*"
+  to = "/your-destination"
+  status = 301
