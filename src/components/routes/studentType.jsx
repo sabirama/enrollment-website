@@ -4,12 +4,12 @@ import NewStudent from "../pages/enrollment/enrollment-process/new-student/NewSt
 const studentType = [
   {
     name: "Old Student / Continuing / Returning",
-    path: "*/old-student",
+    path: "old-student/*",
     element: <OldStudent />,
   },
   {
     name: "New Student / Transferees",
-    path: "*/new-student",
+    path: "new-student/*",
     element: <NewStudent />,
   },
 ];

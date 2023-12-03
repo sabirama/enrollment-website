@@ -11,17 +11,17 @@ export const mainRoutes = [
   },
   {
     name: "About",
-    path: "/about*",
+    path: "/about/*",
     element: <About />,
   },
   {
     name: "Enrollment",
-    path: "/enrollment*",
+    path: "/enrollment/*",
     element: <Enrollment />,
   },
   {
     name: "Contact Us",
-    path: "/contact-us",
+    path: "/contact-us/*",
     element: <ContactUs />,
   },
 ];
