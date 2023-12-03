@@ -46,3 +46,38 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-bottom: 2px solid var(--text-secondary);
+}
+
+input,
+select {
+  max-width: 150px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--white);
+  color: white;
+}
+
+select {
+  background: none;
+  color: var(--text-primary);
+}
+
+option {
+  color: var(--black);
+}

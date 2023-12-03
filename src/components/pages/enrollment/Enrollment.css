@@ -1,0 +1,28 @@
+.enrollment-link-list {
+  padding: 1rem;
+}
+
+.enrollment-link-list div {
+  padding-bottom: 1rem;
+}
+
+.type-info-container {
+  padding: 1rem;
+  text-align: center;
+  border: 4px solid var(--primary);
+  border-radius: 4rem 0;
+  background-color: var(--dark);
+  animation: fadein 0.5s ease-in;
+}
+
+@media screen and (min-width: 1080px) {
+  .enrollment-link-list {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .type-info-container {
+    width: 100%;
+  }
+}
