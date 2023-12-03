@@ -10,6 +10,8 @@
   --primary: lightblue;
   --secondary: lightgrey;
   --dark: rgb(88, 88, 88);
+  --black: black;
+  --white: white;
   background-color: dimgray;
   color: var(--text-primary);
   max-width: 1920px;
@@ -25,11 +27,22 @@ body {
   flex-direction: column;
 }
 
-a {
+a,
+li {
   color: var(--text-primary);
   text-decoration: none;
+  list-style: none;
 }
 
 a:hover {
   color: var(--text-secondary);
+}
+
+/* custom layout-design classes */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

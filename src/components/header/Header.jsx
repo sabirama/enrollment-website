@@ -4,17 +4,17 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <span>ICON</span>
+      <Link to={"/"}>LOGO</Link>
       <nav>
         <ul>
           <li>
-            <Link to="#">About</Link>
+            <Link to="/enrollment">Enroll</Link>
           </li>
           <li>
-            <Link to="#">Others</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="#">Contact Us</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </li>
         </ul>
       </nav>
