@@ -1,8 +1,14 @@
 import OldStudent from "../pages/enrollment/enrollment-process/old-student/OldStudent";
 import NewStudent from "../pages/enrollment/enrollment-process/new-student/NewStudent";
-import EnrollmentForm from "../pages/enrollment/enrollment-process/enrollment-form/EnrollmentForm";
+import EnrollmentForm from "../pages/enrollment/enrollment-process/enrollment-form/EnrollmentForm.";
+import EnrollmentMain from "../pages/enrollment/main/EnrollmentMain";
 
-const studentType = [
+const enrollmentRoutes = [
+  {
+    name: "",
+    path: "",
+    element: <EnrollmentMain />,
+  },
   {
     name: "Old Student / Continuing / Returning",
     path: "old-student/*",
@@ -20,4 +26,4 @@ const studentType = [
   },
 ];
 
-export default studentType;
+export default enrollmentRoutes;

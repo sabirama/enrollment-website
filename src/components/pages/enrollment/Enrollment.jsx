@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import studentType from "../../routes/enrollmentRoutes";
+import enrollmentRoutes from "../../routes/enrollmentRoutes";
 import "./Enrollment.css";
 
 const Enrollment = () => {
@@ -12,8 +12,8 @@ const Enrollment = () => {
           <div className="enrollment-link-list">
             <div>
               <p>Enrollment Process</p>
-              {studentType.map((type, index) => {
-                if (type.name != "Enrollment Form") {
+              {enrollmentRoutes.map((type, index) => {
+                if (index != 0 && index != 3) {
                   return (
                     <li key={index}>
                       <Link to={type.path}>✦ {type.name} </Link>
@@ -23,15 +23,15 @@ const Enrollment = () => {
               })}
             </div>
             <div>
-              <p>Enrollment Forms</p>
+              <p>Forms</p>
               <li>
-                <Link to="enrollment-form">✦ Fill-up Enrollment Form</Link>
+                <Link to="enrollment-form">✦ Enrollment Form</Link>
               </li>
             </div>
           </div>
 
           <Routes>
-            {studentType.map((type, index) => {
+            {enrollmentRoutes.map((type, index) => {
               return <Route key={index} path={type.path} element={type.element} />;
             })}
           </Routes>

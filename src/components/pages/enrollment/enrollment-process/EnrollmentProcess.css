@@ -5,20 +5,17 @@
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-form * {
-  text-align: left;
-  align-items: center;
-  margin: 0.25rem;
 }
 
 .fill-up-input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.fill-up-input input {
+  width: 100%;
+  padding-top: 0.75rem;
 }
 
 form button {
@@ -26,7 +23,9 @@ form button {
   align-self: center;
   align-items: center;
   max-width: 200px;
-  padding: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -52,7 +51,30 @@ form button {
   }
 
   .fill-up-input {
-    flex-direction: row;
-    justify-content: flex-start;
+    width: 100%;
   }
+
+  .fill-up-input input {
+    width: fit-content;
+    padding-top: 0;
+  }
+}
+
+.program-confirmation-text {
+  width: 100%;
+  text-indent: 0;
+}
+
+.selected-program {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  border-bottom: 2px solid var(--white);
+}
+
+form h3 {
+  margin: 1rem;
+}
+
+form h4 {
+  text-indent: 1rem;
 }

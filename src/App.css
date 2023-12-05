@@ -9,7 +9,7 @@ section > .main-display h1 {
 }
 
 #main-display {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 100px);
 }
 
 @keyframes fadein {
@@ -26,4 +26,14 @@ section > .main-display h1 {
     display: flex;
     padding: 1rem;
   }
+}
+
+.fit-content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.text-center {
+  text-align: center;
 }
