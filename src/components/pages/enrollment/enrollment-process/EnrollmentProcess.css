@@ -18,6 +18,10 @@ form {
   padding-top: 0.75rem;
 }
 
+.fit-content {
+  margin-top: 0.75rem;
+}
+
 form button {
   display: flex;
   align-self: center;

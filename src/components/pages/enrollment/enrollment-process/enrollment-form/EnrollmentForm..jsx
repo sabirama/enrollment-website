@@ -52,10 +52,62 @@ export const EnrollmentForm = () => {
       <h1>Enrollment Form</h1>
       <form>
         <div>
+          <div>
+            <h3>Student Information</h3>
+
+            <div className="fill-up-form">
+              <fieldset className="fill-up-input">
+                <legend>Choose School Level</legend>
+                <span>
+                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
+                    <option value="">Elementary</option>
+                    <option value="Grade 1">Grade 1</option>
+                    <option value="Grade 2">Grade 2</option>
+                    <option value="Grade 3">Grade 3</option>
+                    <option value="Grade 4">Grade 4</option>
+                    <option value="Grade 5">Grade 5</option>
+                    <option value="Grade 6">Grade 6</option>
+                  </select>
+                </span>
+
+                <span>
+                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
+                    <option value="">Secondary</option>
+                    <option value="Grade 7">Grade 7</option>
+                    <option value="Grade 8">Grade 8</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                  </select>
+                </span>
+
+                <span>
+                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
+                    <option value="">Tertiary</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                  </select>
+                </span>
+
+                <span>
+                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
+                    <option value="">College</option>
+                    <option value="Course 1">Course 1</option>
+                    <option value="Course 2">Course 2</option>
+                    <option value="Course 3">Course 3</option>
+                    <option value="Course 4">Course 4</option>
+                    <option value="Course 5">Course 5</option>
+                    <option value="Course 6">Course 6</option>
+                  </select>
+                </span>
+                <h4 className="program-confirmation-text">
+                  Selected Level: <strong className="selected-program">{program}</strong>
+                </h4>
+              </fieldset>
+            </div>
+          </div>
           {/* Personal INformation */}
           <h3>Personal Information</h3>
           <div className="fill-up-form">
-            {/* Applicants Basic Info */}
             <fieldset className="fill-up-input">
               <legend>Name</legend>
               <input
@@ -82,6 +134,7 @@ export const EnrollmentForm = () => {
             </fieldset>
 
             <fieldset className="fill-up-input">
+              {/* Applicants Basic Info */}
               <legend>Basic Information</legend>
               <select onChange={(e) => setGender(e.target.value)} required>
                 <option value="">Gender</option>
@@ -173,63 +226,24 @@ export const EnrollmentForm = () => {
             </fieldset>
           </div>
 
-          <div>
-            <h3>Student Information</h3>
-
-            <div className="fill-up-form">
-              <fieldset className="fill-up-input">
-                <legend>Choose School Level</legend>
-                <span>
-                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
-                    <option value="">Elementary</option>
-                    <option value="Grade 1">Grade 1</option>
-                    <option value="Grade 2">Grade 2</option>
-                    <option value="Grade 3">Grade 3</option>
-                    <option value="Grade 4">Grade 4</option>
-                    <option value="Grade 5">Grade 5</option>
-                    <option value="Grade 6">Grade 6</option>
-                  </select>
-                </span>
-
-                <span>
-                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
-                    <option value="">Secondary</option>
-                    <option value="Grade 7">Grade 7</option>
-                    <option value="Grade 8">Grade 8</option>
-                    <option value="Grade 9">Grade 9</option>
-                    <option value="Grade 10">Grade 10</option>
-                  </select>
-                </span>
-
-                <span>
-                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
-                    <option value="">Tertiary</option>
-                    <option value="Grade 11">Grade 11</option>
-                    <option value="Grade 12">Grade 12</option>
-                  </select>
-                </span>
-
-                <span>
-                  <select value={program} onChange={(e) => setProgram(e.target.value)} required>
-                    <option value="">College</option>
-                    <option value="Course 1">Course 1</option>
-                    <option value="Course 2">Course 2</option>
-                    <option value="Course 3">Course 3</option>
-                    <option value="Course 4">Course 4</option>
-                    <option value="Course 5">Course 5</option>
-                    <option value="Course 6">Course 6</option>
-                  </select>
-                </span>
-                <h4 className="program-confirmation-text">
-                  Selected Level: <strong className="selected-program">{program}</strong>
-                </h4>
-              </fieldset>
-            </div>
-          </div>
-
           <div className="fill-up-form">
+            <h1>Student Files</h1>
+            <fieldset className="fill-up-input">
+              <legend>Photos</legend>
+              <div className="fit-content">
+                <strong>1 x 1 Picture</strong>
+                <input type="file" accept=".jpg, .png, .jpeg" placeholder="test" />
+              </div>
+
+              <div className="fit-content">
+                <strong>2 x 2 Picture</strong>
+                <input type="file" accept=".pdf, .docx, .doc" placeholder="test" />
+              </div>
+            </fieldset>
+
             <fieldset className="fill-up-input">
               <legend>Files</legend>
+
               <div className="fit-content">
                 <strong>GMRC</strong>
                 <input type="file" accept=".pdf, .docx, .doc" placeholder="test" />
